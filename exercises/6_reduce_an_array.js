@@ -7,6 +7,14 @@ let totalOfOddDigits = oneToFive.reduce(function(accumulator, currentValue) {
   // of only the odd values (5, 1, and 3). Do not alter any other code.
   // PLACE YOUR CODE BELOW
 
+  accumulator = accumulator || 0;
+
+  if (currentValue%2 === 1) {
+    return accumulator + currentValue;
+  }
+
+  return accumulator;
+
   // PLACE YOUR CODE ABOVE
 }, 0)
 

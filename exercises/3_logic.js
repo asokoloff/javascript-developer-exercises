@@ -12,6 +12,17 @@ function paintMixer(color1, color2) {
   */
   // PLACE YOUR CODE BELOW
 
+  const makeCompositeKey = array => array.sort()
+    .map(str => str.toLowerCase())
+    .join('|')
+  const mixes = {};
+  
+  mixes[makeCompositeKey(['blue', 'red'])] = 'purple';
+  mixes[makeCompositeKey(['green', 'red'])] = 'brown';
+  mixes[makeCompositeKey(['blue', 'yellow'])] = 'green';
+
+  return mixes[makeCompositeKey([color1, color2])] || 'unknown';
+
   // PLACE YOUR CODE ABOVE
 }
 

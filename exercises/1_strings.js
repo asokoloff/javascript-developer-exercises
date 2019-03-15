@@ -22,6 +22,10 @@ before the next comment block.
 */
 // PLACE YOUR CODE BELOW
 
+const processedWords = words.map(word => word.slice(1,3));
+wordList = processedWords.join(", ");
+
+
 // PLACE YOUR CODE ABOVE
 /*
 When run with "node 1_strings.js" you should see the following on

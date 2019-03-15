@@ -69,6 +69,8 @@ function flattenRideshareArray(array) {
     */
     // PLACE YOUR CODE BELOW
 
+    return {rideShareId: element.rideShareId, numberMembers: element.members && element.members.length || 0 }
+
     // PLACE YOUR CODE ABOVE
   })
 

@@ -17,6 +17,18 @@ console.log('Go!')
 
 // PLACE YOUR CODE BELOW
 
+
+const waitForOne = wait(1);
+const waitForTwo = wait(2);
+
+waitForOne.then(() => {
+  console.log("I waited 1 second");
+  return waitForTwo;
+}).then(()=>{
+  console.log("I waited 2 more seconds");
+});
+
+
 // PLACE YOUR CODE ABOVE
 /*
 You console output should look like the following AND wait the
